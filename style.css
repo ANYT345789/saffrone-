@@ -1,0 +1,41 @@
+header{
+    background-color:green;
+    text-align:left;
+    font-size:50px;
+    color:white;
+    box-shadow:10px 20px 3px black;
+    text-shadow:12 px -24px 20px black;
+}
+div{
+    text-align:center;
+    box-shadow:5px 5px 10px black;
+    display:block;
+    margin:0 auto;
+    width:400px;
+    height:350px;
+}
+body{
+    background-color:#272424;
+}
+.one{
+    animation-name:hdrh;
+    animation-duration:20s;
+    animation-iteration-count:1;
+    transition:2s;
+}
+.one:hover{
+    transform:scale(1.3);
+    animation-play-state:paused;
+}
+@keyframes hdrh{
+    0%{color:white;}
+    100%{color:#272424;}
+}
+.two{
+    text-decoration:none;
+    font-size:15px;
+}
+.two:hover{
+    transform:scale(1.2);
+    color:red;
+}

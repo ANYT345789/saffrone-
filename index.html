@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><span class="six">saffrone</span></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="one">Saffrone</h1>
+        <h6 class="one">official</h6>
+    </header>
+    <div>
+        <form>
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit">Login</button>
+          </form>
+          <a class="two" href="sign up.html">Sign in</a>
+    </div>
+    <style>
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 100px;
+        }
+      
+        input {
+          width: 300px;
+          height: 40px;
+          margin-bottom: 10px;
+          padding: 5px;
+        }
+      
+        button {
+          width: 100px;
+          height: 40px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+        }
+      </style>
+      <script>
+        function login() {
+          const username = document.getElementsByName('username')[0].value;
+          const password = document.getElementsByName('password')[0].value;
+      
+          // Perform validation and login logic here
+          if (username === 'admin' && password === 'password') {
+            alert('Login successful!');
+          } else {
+            alert('Invalid username or password.');
+          }
+        }
+      
+        document.querySelector('form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          login();
+        });
+      </script>
+    
+</body>
+</html>
